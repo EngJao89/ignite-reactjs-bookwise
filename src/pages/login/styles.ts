@@ -27,7 +27,7 @@ export const SubTitleSection = styled.section`
   line-height: 160%; /* 25.6px */
 `;
 
-export const CardHome = styled.button`
+export const CardLogin = styled.button`
   background: ${(props) => props.theme['gray-600']};
   color: ${(props) => props.theme.white};
   display: flex;

@@ -6,7 +6,7 @@ import logoGitHub from "../../../public/akar-icons_github-fill.svg";
 import logoRocket from "../../../public/RocketLaunch.svg";
 
 import { 
-  CardHome,
+  CardLogin,
   LoginContainer,  
   MainSection, 
   SubTitleSection
@@ -22,18 +22,18 @@ export default function Login(){
         <SubTitleSection>
           Faça seu login ou acesse como visitante.
         </SubTitleSection>
-        <CardHome>
+        <CardLogin>
           <Image alt="Google" src={logoGoogle}/>
           Entrar com Google
-        </CardHome>
-        <CardHome>
+        </CardLogin>
+        <CardLogin>
           <Image alt="GitHub" src={logoGitHub}/>
           Entrar com GitHub
-        </CardHome>
-        <CardHome>
+        </CardLogin>
+        <CardLogin>
           <Image alt="Rocket" src={logoRocket}/>
           Acessar como visitante
-        </CardHome>
+        </CardLogin>
       </MainSection>
     </LoginContainer>
   )

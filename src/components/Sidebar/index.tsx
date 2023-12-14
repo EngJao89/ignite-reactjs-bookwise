@@ -1,8 +1,18 @@
 import Image from "next/image";
-import { IoTrendingUpOutline, IoNavigateOutline } from "react-icons/io5";
+import { 
+  IoTrendingUpOutline, 
+  IoNavigateOutline, 
+  IoLogInOutline
+} from "react-icons/io5";
 
 import logoBook1x from "../../../public/sidebarLogo1x.png"
-import { Container, ExplorerButton, InitButton, Logo } from "./styles";
+import { 
+  Container, 
+  ExplorerButton, 
+  InitButton, 
+  LoginButton, 
+  Logo 
+} from "./styles";
 
 export function Sidebar(){
   return (
@@ -23,6 +33,11 @@ export function Sidebar(){
         <IoNavigateOutline size={24}/>
         Explorar
       </ExplorerButton>
+
+      <LoginButton>
+        Fazer Login
+        <IoLogInOutline size={24}/>
+      </LoginButton>
     </Container>
   )
 }
