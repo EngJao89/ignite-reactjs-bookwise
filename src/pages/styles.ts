@@ -15,7 +15,7 @@ export const ContainerHeader = styled.div`
 
 export const TextHeader = styled.label`
   color: ${(props) => props.theme.white};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -25,8 +25,8 @@ export const TextHeader = styled.label`
 `;
 
 export const TextSubtitle = styled.label`
-  color: ${(props) => props.theme.white};
-  font-family: 'Nunito Sans';
+  color: ${(props) => props.theme['gray-100']};
+  font-family: 'Roboto';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

@@ -22,7 +22,7 @@ export const CardHeader = styled.div`
 
 export const TextName = styled.p`
   color: ${(props) => props.theme.white};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -35,7 +35,7 @@ export const TextName = styled.p`
 
 export const TextDate = styled.p`
   color: ${(props) => props.theme['gray-400']};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -57,7 +57,7 @@ export const Content = styled.div`
 
 export const BookName = styled.p`
   color: ${(props) => props.theme.white};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -66,7 +66,7 @@ export const BookName = styled.p`
 
 export const AuthorName = styled.p`
   color: ${(props) => props.theme['gray-400']};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -75,7 +75,7 @@ export const AuthorName = styled.p`
 
 export const TextComment = styled.p`
   color: ${(props) => props.theme['gray-300']};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

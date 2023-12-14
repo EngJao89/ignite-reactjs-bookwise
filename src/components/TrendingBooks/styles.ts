@@ -16,9 +16,9 @@ export const HeaderTitle = styled.div`
   align-self: stretch;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.span`
   color: ${(props) => props.theme.white};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -29,11 +29,13 @@ export const SeeButton = styled.button`
   background-color: transparent !important;
   border: none;
   color: ${(props) => props.theme['purple-100']};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 160%; /* 22.4px */
+  align-items: center;
+  padding: 6px 8px;
 `;
 
 export const CardBook = styled.div`
@@ -48,7 +50,7 @@ export const CardBook = styled.div`
 
 export const CardBookTitle = styled.p`
 color: ${(props) => props.theme.white};
-font-family: 'Nunito Sans';
+font-family: 'Roboto';
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
@@ -57,7 +59,7 @@ line-height: 140%; /* 22.4px */
 
 export const BookAuthor = styled.p`
   color: ${(props) => props.theme['gray-400']};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

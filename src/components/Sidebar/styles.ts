@@ -20,7 +20,7 @@ export const InitButton = styled.label`
   justify-content: center;
   align-items: center;
   gap: 12px;
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 700;
 `;
@@ -31,13 +31,14 @@ export const ExplorerButton = styled.label`
   justify-content: center;
   align-items: center;
   gap: 12px;
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 400;
 `;
 
 export const LoginButton = styled.label`
   display: flex;
+  font-family: 'Roboto';
   padding-top: 694px;
   justify-content: center;
   align-items: center;

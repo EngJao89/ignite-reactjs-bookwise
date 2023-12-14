@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IoStar, IoStarOutline } from "react-icons/io5";
+import { IoStar, IoStarOutline, IoChevronForward } from "react-icons/io5";
 
 import BookGO from "../../../public/books/book-george-orwell.png"
 import BookZR from "../../../public/books/book-zeno-rocha.png"
@@ -23,6 +23,7 @@ export function TrendingBooks() {
         <Title>Livros populares</Title>
         <SeeButton>
           Ver Mais
+          <IoChevronForward size={16} color={'#8381D9'} />
         </SeeButton>
       </HeaderTitle>
       <CardBook>
