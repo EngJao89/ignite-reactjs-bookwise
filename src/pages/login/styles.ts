@@ -10,7 +10,7 @@ export const MainSection = styled.section`
   margin-top: 245px;
   margin-left: 194px;
   color: ${(props) => props.theme.white};
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -19,8 +19,8 @@ export const MainSection = styled.section`
 `;
 
 export const SubTitleSection = styled.section`
-  color: ${(props) => props.theme.white};
-  font-family: 'Nunito Sans';
+  color: ${(props) => props.theme['gray-200']};
+  font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +38,7 @@ export const CardLogin = styled.button`
   gap: 20px;
   border-radius: 8px;
   border: 0;
-  font-family: 'Nunito Sans';
+  font-family: 'Roboto';
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
