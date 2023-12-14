@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  background: ${(props) => props.theme['gray-600']};
+  background: ${(props) => props.theme['gray-700']};
   display: flex;
   padding: 24px;
   margin-bottom: 12px;

@@ -2,7 +2,14 @@ import { IoTrendingUpOutline } from "react-icons/io5";
 
 import { Sidebar } from "@/components/Sidebar";
 import { CardComment } from "@/components/CardComment";
-import { Container, ContainerHeader, TextHeader, TextSubtitle } from "./styles";
+import { TrendingBooks } from "@/components/TrendingBooks";
+import { 
+  Container, 
+  ContainerHeader, 
+  ContainerTrend, 
+  TextHeader, 
+  TextSubtitle 
+} from "./styles";
 
 export default function Home() {
   return (
@@ -26,7 +33,9 @@ export default function Home() {
           <CardComment />
         </ContainerHeader>
 
-
+        <ContainerTrend>
+          <TrendingBooks />
+        </ContainerTrend>
       </Container>
   )
 }
