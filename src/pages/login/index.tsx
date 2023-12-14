@@ -31,6 +31,7 @@ export default function Login(){
           <Image alt="GitHub" src={logoGitHub}/>
           Entrar com GitHub
         </CardLogin>
+
         <Link href="/" passHref legacyBehavior>
           <CardLogin>
             <Image alt="Rocket" src={logoRocket}/>

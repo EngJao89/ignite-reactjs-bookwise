@@ -19,12 +19,13 @@ export const MainSection = styled.section`
 `;
 
 export const SubTitleSection = styled.section`
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme['gray-200']};
   font-family: 'Nunito Sans';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 25.6px */
+  margin-bottom: 40px;
 `;
 
 export const CardLogin = styled.button`
