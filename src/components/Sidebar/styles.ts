@@ -35,3 +35,11 @@ export const ExplorerButton = styled.label`
   font-size: 16px;
   font-weight: 400;
 `;
+
+export const LoginButton = styled.label`
+  display: flex;
+  padding-top: 694px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+`;
