@@ -25,6 +25,7 @@ export const SubTitleSection = styled.section`
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 25.6px */
+  margin-bottom: 40px;
 `;
 
 export const CardLogin = styled.button`
