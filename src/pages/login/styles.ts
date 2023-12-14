@@ -37,6 +37,7 @@ export const CardLogin = styled.button`
   align-items: center;
   gap: 20px;
   border-radius: 8px;
+  border: 0;
   font-family: 'Nunito Sans';
   font-size: 18px;
   font-style: normal;

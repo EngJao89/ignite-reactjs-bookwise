@@ -33,7 +33,7 @@ export const TextName = styled.p`
   flex: 1 0 0;
 `;
 
-export const TextDate = styled.h5`
+export const TextDate = styled.p`
   color: ${(props) => props.theme['gray-400']};
   font-family: 'Nunito Sans';
   font-size: 14px;
