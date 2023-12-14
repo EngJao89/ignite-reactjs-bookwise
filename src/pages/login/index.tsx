@@ -11,6 +11,7 @@ import {
   MainSection, 
   SubTitleSection
 } from "./styles"
+import Link from "next/link";
 
 export default function Login(){
   return (
@@ -30,10 +31,12 @@ export default function Login(){
           <Image alt="GitHub" src={logoGitHub}/>
           Entrar com GitHub
         </CardLogin>
-        <CardLogin>
-          <Image alt="Rocket" src={logoRocket}/>
-          Acessar como visitante
-        </CardLogin>
+        <Link href="/" passHref legacyBehavior>
+          <CardLogin>
+            <Image alt="Rocket" src={logoRocket}/>
+            Acessar como visitante
+          </CardLogin>
+        </Link>
       </MainSection>
     </LoginContainer>
   )

@@ -13,6 +13,7 @@ import {
   LoginButton, 
   Logo 
 } from "./styles";
+import Link from "next/link";
 
 export function Sidebar(){
   return (
@@ -24,20 +25,24 @@ export function Sidebar(){
         />
       </Logo>
 
-      <InitButton>
-        <IoTrendingUpOutline size={24}/>
-        Início
-      </InitButton>
-      
+      <Link href="/" passHref legacyBehavior>
+        <InitButton>
+          <IoTrendingUpOutline size={24}/>
+          Início
+        </InitButton>
+      </Link>
+
       <ExplorerButton>
         <IoNavigateOutline size={24}/>
         Explorar
       </ExplorerButton>
 
-      <LoginButton>
-        Fazer Login
-        <IoLogInOutline size={24}/>
-      </LoginButton>
+      <Link href="/login" passHref legacyBehavior>
+        <LoginButton>
+          Fazer Login
+          <IoLogInOutline size={24}/>
+        </LoginButton>
+      </Link>
     </Container>
   )
 }
