@@ -15,6 +15,7 @@ export const Logo = styled.div`
 `;
 
 export const InitButton = styled.label`
+  color: ${(props) => props.theme['gray-400']};
   display: flex;
   padding-top: 64px;
   justify-content: center;
@@ -26,6 +27,7 @@ export const InitButton = styled.label`
 `;
 
 export const ExplorerButton = styled.label`
+  color: ${(props) => props.theme['gray-400']};
   display: flex;
   padding-top: 64px;
   justify-content: center;
@@ -37,6 +39,7 @@ export const ExplorerButton = styled.label`
 `;
 
 export const LoginButton = styled.label`
+  color: ${(props) => props.theme.white};
   display: flex;
   font-family: 'Roboto';
   padding-top: 694px;

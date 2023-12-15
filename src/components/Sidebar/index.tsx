@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { 
   IoTrendingUpOutline, 
   IoNavigateOutline, 
@@ -13,7 +14,6 @@ import {
   LoginButton, 
   Logo 
 } from "./styles";
-import Link from "next/link";
 
 export function Sidebar(){
   return (
@@ -32,10 +32,12 @@ export function Sidebar(){
         </InitButton>
       </Link>
 
-      <ExplorerButton>
-        <IoNavigateOutline size={24}/>
-        Explorar
-      </ExplorerButton>
+      <Link href="/explore" passHref legacyBehavior>
+        <ExplorerButton>
+          <IoNavigateOutline size={24}/>
+          Explorar
+        </ExplorerButton>
+      </Link>
 
       <Link href="/login" passHref legacyBehavior>
         <LoginButton>

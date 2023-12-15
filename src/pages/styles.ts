@@ -13,7 +13,7 @@ export const ContainerHeader = styled.div`
   margin-left: 96px;
 `;
 
-export const TextHeader = styled.label`
+export const TextHeader = styled.p`
   color: ${(props) => props.theme.white};
   font-family: 'Roboto';
   font-size: 24px;
@@ -24,7 +24,7 @@ export const TextHeader = styled.label`
   margin-top: 72px;
 `;
 
-export const TextSubtitle = styled.label`
+export const TextSubtitle = styled.p`
   color: ${(props) => props.theme['gray-100']};
   font-family: 'Roboto';
   font-size: 14px;
