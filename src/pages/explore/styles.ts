@@ -49,3 +49,52 @@ export const ContentTag =styled.div`
   display: flex;
   margin-top: 24px;
 `;
+
+export const ListContent = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+`;
+
+export const BookCard = styled.div`
+  background-color: ${(props) => props.theme['gray-700']};
+  display: flex;
+  padding: 16px 20px;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+`;
+
+export const BookContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 20px;
+`;
+
+export const BookTitle = styled.p`
+  color: ${(props) => props.theme.white};
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+`;
+
+export const BookSubtitle = styled.span`
+  color: ${(props) => props.theme['gray-400']};
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+`;
+
+export const RateContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+`;
