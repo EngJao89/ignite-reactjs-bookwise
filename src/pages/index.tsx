@@ -1,6 +1,5 @@
 import { IoTrendingUpOutline } from "react-icons/io5";
 
-import { Sidebar } from "@/components/Sidebar";
 import { CardComment } from "@/components/CardComment";
 import { TrendingBooks } from "@/components/TrendingBooks";
 import { 
@@ -10,32 +9,40 @@ import {
   TextHeader, 
   TextSubtitle 
 } from "./styles";
+import { DefaultLayout } from "@/layout/DefaultLayout";
+import Head from "next/head";
 
 export default function Home() {
   return (
-      <Container>
-        <Sidebar />
+    <>
+      <Head>
+        <title>Home | Book Wise</title>
+      </Head>
 
-        <ContainerHeader>
-          <TextHeader>
-            <IoTrendingUpOutline 
-              size={28} 
-              color={'#50B2C0'}
-              style={{ paddingRight: 10 }}
-            />
-            Início
-          </TextHeader>
+      <DefaultLayout>
+        <Container>
+          <ContainerHeader>
+            <TextHeader>
+              <IoTrendingUpOutline 
+                size={28} 
+                color={'#50B2C0'}
+                style={{ paddingRight: 10 }}
+              />
+              Início
+            </TextHeader>
 
-          <TextSubtitle>
-            Avaliações mais recentes
-          </TextSubtitle>
+            <TextSubtitle>
+              Avaliações mais recentes
+            </TextSubtitle>
 
-          <CardComment />
-        </ContainerHeader>
+            <CardComment />
+          </ContainerHeader>
 
-        <ContainerTrend>
-          <TrendingBooks />
-        </ContainerTrend>
-      </Container>
+          <ContainerTrend>
+            <TrendingBooks />
+          </ContainerTrend>
+        </Container>
+      </DefaultLayout>
+    </>
   )
 }

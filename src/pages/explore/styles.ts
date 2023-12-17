@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 1440px;
-  height: 1290px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 `;
 
 export const ContentTitle = styled.div`
   display: flex;
-  width: 146px;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   gap: 12px;
 `;
 
 export const TextHeader = styled.span`
+  display: flex;
   color: ${(props) => props.theme.white};
   font-family: 'Roboto';
   font-size: 24px;
@@ -27,6 +27,7 @@ export const InputSearch = styled.div`
   width: 433px;
   height: 48px;
   padding: 14px 20px;
+  margin-left: 420px;
   gap: 8px;
   flex-shrink: 0;
   border: 1px solid;
@@ -45,5 +46,6 @@ export const TextSearch = styled.span`
 `;
 
 export const ContentTag =styled.div`
-margin-top: 24px;
+  display: flex;
+  margin-top: 24px;
 `;
