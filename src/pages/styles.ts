@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.main`
   display: flex;
   flex-direction: space-between;
-  align-items: center;
   gap: 16px;
 `;
 
@@ -21,7 +20,6 @@ export const TextHeader = styled.p`
   font-weight: 700;
   line-height: 140%; /* 33.6px */
   gap: 16px;
-  margin-top: 72px;
 `;
 
 export const TextSubtitle = styled.p`
@@ -35,6 +33,4 @@ export const TextSubtitle = styled.p`
   margin-bottom: 16px;
 `;
 
-export const ContainerTrend = styled.div`
-
-`;
+export const ContainerTrend = styled.div``;
