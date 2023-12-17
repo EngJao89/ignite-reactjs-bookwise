@@ -55,7 +55,7 @@ export const Content = styled.div`
   align-self: stretch;
 `;
 
-export const BookName = styled.p`
+export const BookName = styled.a`
   color: ${(props) => props.theme.white};
   font-family: 'Roboto';
   font-size: 16px;
