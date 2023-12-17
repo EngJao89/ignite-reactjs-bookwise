@@ -1,20 +1,32 @@
 'use client';
 
 import Image from "next/image";
-import { IoNavigateOutline, IoSearchOutline } from "react-icons/io5";
+import Head from "next/head";
+import { 
+  IoNavigateOutline, 
+  IoSearchOutline, 
+  IoStar, 
+  IoStarOutline 
+} from "react-icons/io5";
 
-import { Sidebar } from "@/components/Sidebar";
+import { books } from "./util/books.json"
+import { DefaultLayout } from "@/layout/DefaultLayout";
 import { Categories } from "@/components/Categories";
+
 import {
   ContentTitle, 
   ContentTag, 
   InputSearch, 
   TextHeader, 
   TextSearch,
-  Container
+  Container,
+  ListContent,
+  BookCard,
+  BookTitle,
+  BookSubtitle,
+  BookContent,
+  RateContainer
 } from "./styles";
-import { DefaultLayout } from "@/layout/DefaultLayout";
-import Head from "next/head";
 
 export default function Explore(){
 
@@ -39,11 +51,28 @@ export default function Explore(){
             </InputSearch>
           </ContentTitle>
 
-
-
           <ContentTag>
             <Categories />
           </ContentTag>
+
+          <ListContent>
+            {books.map((book) => (
+              <BookCard key={book.id}>
+                <Image alt="" src={book.cover_url} width={108} height={152}/>
+                <BookContent>
+                  <BookTitle>{book.name}</BookTitle>
+                  <BookSubtitle>{book.author}</BookSubtitle>
+                  <RateContainer>
+                    <IoStar size={16} color={'#8381D9'} />
+                    <IoStar size={16} color={'#8381D9'} />
+                    <IoStar size={16} color={'#8381D9'} />
+                    <IoStar size={16} color={'#8381D9'} />
+                    <IoStarOutline size={16} color={'#8381D9'} />
+                  </RateContainer>
+                </BookContent>
+              </BookCard>
+            ))}
+          </ListContent>
         </Container>
       </DefaultLayout>
     </>
