@@ -2,17 +2,18 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   display: flex;
-  flex-direction: space-between;
+  flex-direction: column;
   gap: 16px;
 `;
 
 export const ContainerHeader = styled.div`
   display: flex;
-  flex-direction: column;
-  margin-left: 96px;
+  width: 146px;
+  align-items: center;
+  gap: 12px;
 `;
 
-export const TextHeader = styled.p`
+export const TextHeader = styled.span`
   color: ${(props) => props.theme.white};
   font-family: 'Roboto';
   font-size: 24px;
@@ -22,7 +23,15 @@ export const TextHeader = styled.p`
   gap: 16px;
 `;
 
-export const TextSubtitle = styled.p`
+export const ContentBook = styled.div`
+  display: flex;
+  width: 608px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+`;
+
+export const TextSubtitle = styled.span`
   color: ${(props) => props.theme['gray-100']};
   font-family: 'Roboto';
   font-size: 14px;
@@ -33,4 +42,10 @@ export const TextSubtitle = styled.p`
   margin-bottom: 16px;
 `;
 
-export const ContainerTrend = styled.div``;
+export const ContainerTrend = styled.div`
+  display: flex;
+  width: 324px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+`;

@@ -18,7 +18,7 @@ export const MainSection = styled.section`
   text-align: center;
 `;
 
-export const SubTitleSection = styled.section`
+export const SubTitleSection = styled.span`
   color: ${(props) => props.theme['gray-200']};
   font-family: 'Roboto';
   font-size: 16px;
