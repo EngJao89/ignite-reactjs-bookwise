@@ -48,7 +48,7 @@ export const CardBook = styled.div`
   border-radius: 8px;
 `;
 
-export const CardBookTitle = styled.p`
+export const CardBookTitle = styled.span`
 color: ${(props) => props.theme.white};
 font-family: 'Roboto';
 font-size: 16px;
@@ -57,7 +57,7 @@ font-weight: 700;
 line-height: 140%; /* 22.4px */
 `;
 
-export const BookAuthor = styled.p`
+export const BookAuthor = styled.h5`
   color: ${(props) => props.theme['gray-400']};
   font-family: 'Roboto';
   font-size: 14px;

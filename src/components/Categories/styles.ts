@@ -17,7 +17,7 @@ export const TagCard = styled.span`
   border-color: ${(props) => props.theme['purple-100']};
 `;
 
-export const TextTag = styled.p`
+export const TextTag = styled.h3`
   color: ${(props) => props.theme['purple-100']};
   font-family: 'Roboto';
   font-size: 16px;

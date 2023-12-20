@@ -20,7 +20,7 @@ export const CardHeader = styled.div`
   align-self: stretch;
 `;
 
-export const TextName = styled.p`
+export const TextName = styled.span`
   color: ${(props) => props.theme.white};
   font-family: 'Roboto';
   font-size: 16px;
@@ -28,12 +28,10 @@ export const TextName = styled.p`
   font-weight: 400;
   line-height: 160%; /* 25.6px */
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   flex: 1 0 0;
 `;
 
-export const TextDate = styled.p`
+export const TextDate = styled.h5`
   color: ${(props) => props.theme['gray-400']};
   font-family: 'Roboto';
   font-size: 14px;
@@ -48,14 +46,24 @@ export const RateContainer = styled.div`
   gap: 4px;
 `;
 
+export const BookDescription = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 0;
+  justify-content: flex-start;
+  align-self: stretch;
+  gap: 20px;
+`;
+
 export const Content = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
 `;
 
-export const BookName = styled.a`
+export const BookName = styled.span`
   color: ${(props) => props.theme.white};
   font-family: 'Roboto';
   font-size: 16px;
@@ -73,12 +81,12 @@ export const AuthorName = styled.p`
   line-height: 160%; /* 22.4px */
 `;
 
-export const TextComment = styled.p`
+export const TextComment = styled.h5`
   color: ${(props) => props.theme['gray-300']};
   font-family: 'Roboto';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 22.4px */
-  padding-top: 20px;
+  padding-top: 8px;
 `;

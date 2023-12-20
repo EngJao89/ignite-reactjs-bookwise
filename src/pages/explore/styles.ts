@@ -75,7 +75,7 @@ export const BookContent = styled.div`
   gap: 20px;
 `;
 
-export const BookTitle = styled.p`
+export const BookTitle = styled.span`
   color: ${(props) => props.theme.white};
   font-family: 'Roboto';
   font-size: 16px;

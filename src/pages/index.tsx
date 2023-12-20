@@ -6,6 +6,7 @@ import {
   Container, 
   ContainerHeader, 
   ContainerTrend, 
+  ContentBook, 
   TextHeader, 
   TextSubtitle 
 } from "./styles";
@@ -30,18 +31,20 @@ export default function Home() {
               />
               Início
             </TextHeader>
+          </ContainerHeader>
 
+          <ContentBook>
             <TextSubtitle>
               Avaliações mais recentes
             </TextSubtitle>
 
             <CardComment />
-          </ContainerHeader>
-
-          <ContainerTrend>
-            <TrendingBooks />
-          </ContainerTrend>
+          </ContentBook>
         </Container>
+
+        <ContainerTrend>
+          <TrendingBooks />
+        </ContainerTrend>
       </DefaultLayout>
     </>
   )
