@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { IoTrendingUpOutline } from "react-icons/io5";
 
 import { CardComment } from "@/components/CardComment";
@@ -11,7 +12,6 @@ import {
   TextSubtitle 
 } from "./styles";
 import { DefaultLayout } from "@/layout/DefaultLayout";
-import Head from "next/head";
 
 export default function Home() {
   return (
@@ -22,18 +22,23 @@ export default function Home() {
 
       <DefaultLayout>
         <Container>
-          <ContainerHeader>
-            <TextHeader>
-              <IoTrendingUpOutline 
-                size={28} 
-                color={'#50B2C0'}
-                style={{ paddingRight: 10 }}
-              />
-              Início
-            </TextHeader>
-          </ContainerHeader>
+
+          <ContainerTrend>
+            <TrendingBooks />
+          </ContainerTrend>
 
           <ContentBook>
+            <ContainerHeader>
+              <TextHeader>
+                <IoTrendingUpOutline 
+                  size={28}
+                  color="#50B2C0"
+                  style={{ paddingRight: 10 }}
+                />
+                Início
+              </TextHeader>
+            </ContainerHeader>
+
             <TextSubtitle>
               Avaliações mais recentes
             </TextSubtitle>
@@ -41,10 +46,6 @@ export default function Home() {
             <CardComment />
           </ContentBook>
         </Container>
-
-        <ContainerTrend>
-          <TrendingBooks />
-        </ContainerTrend>
       </DefaultLayout>
     </>
   )

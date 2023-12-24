@@ -24,6 +24,9 @@ export const InitButton = styled.label`
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 700;
+  &:hover {
+    color: ${(props) => props.theme.white};
+  }
 `;
 
 export const ExplorerButton = styled.label`
@@ -36,14 +39,20 @@ export const ExplorerButton = styled.label`
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 400;
+  &:hover {
+    color: ${(props) => props.theme.white};
+  }
 `;
 
 export const LoginButton = styled.label`
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme["green-100"]};
   display: flex;
   font-family: 'Roboto';
   padding-top: 694px;
   justify-content: center;
   align-items: center;
   gap: 12px;
+  &:hover {
+    color: ${(props) => props.theme.white};
+  }
 `;
