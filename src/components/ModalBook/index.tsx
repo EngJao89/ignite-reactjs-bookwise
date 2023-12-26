@@ -5,8 +5,11 @@ import {
   IoBookOutline, 
   IoBookmarkOutline, 
   IoStar, 
-  IoStarOutline 
+  IoStarOutline, 
+  IoCloseOutline
 } from "react-icons/io5";
+
+import Avatar from "../../../public/Avatar.png";
 
 import { 
   BookAbout,
@@ -16,18 +19,26 @@ import {
   BookStats, 
   BookSubtitle, 
   BookTitle, 
+  DialogClose, 
   DialogContent, 
   DialogOverlay, 
   DialogPortal, 
   DialogRoot, 
   DialogTrigger, 
+  EvaluateButton, 
+  EvaluateCard, 
+  EvaluateContent, 
+  EvaluateDate, 
+  EvaluateHeader, 
+  EvaluateText, 
+  EvaluateTitles, 
+  EvaluateUser, 
   RateContainer,
   StatusContent,
   StatusSubtitles
 } from "./styles"
 
 import bookImage from "../../../public/book-list/14-habitos-de-desenvolvedores-altamente-produtivos.svg"
-
 
 interface Book {
   name: string
@@ -83,6 +94,10 @@ export function ModalBook({
           <DialogOverlay />
 
           <DialogContent>
+            <DialogClose>
+              <IoCloseOutline size={24} color="#8D95AF"/>
+            </DialogClose>
+
             <BookSection>
               <BookContent>
                 <Image 
@@ -126,6 +141,72 @@ export function ModalBook({
                 </StatusContent>
               </BookAbout>
             </BookSection>
+
+            <EvaluateContent>
+              <EvaluateTitles>Avaliar</EvaluateTitles>
+              <EvaluateButton>Avaliações</EvaluateButton>
+            </EvaluateContent>
+
+            <EvaluateCard>
+              <EvaluateHeader>
+                <Image alt="Avatar" src={Avatar}/>
+                <EvaluateUser>Brandon Botosh</EvaluateUser>
+                <EvaluateDate>Há 2 dias</EvaluateDate>
+
+                <RateContainer>
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStarOutline size={16} color={'#8381D9'} />
+                </RateContainer>
+              </EvaluateHeader>
+              <EvaluateText>
+                Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. 
+                Penatibus id vestibulum imperdiet a at imperdiet lectus leo. 
+                Sit porta eget nec vitae sit vulputate eget
+              </EvaluateText>
+            </EvaluateCard>
+
+            <EvaluateCard>
+              <EvaluateHeader>
+                <Image alt="Avatar" src={Avatar}/>
+                <EvaluateUser>Brandon Botosh</EvaluateUser>
+                <EvaluateDate>Há 4 meses</EvaluateDate>
+
+                <RateContainer>
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStarOutline size={16} color={'#8381D9'} />
+                </RateContainer>
+              </EvaluateHeader>
+              <EvaluateText>
+                Nec tempor nunc in egestas. 
+              </EvaluateText>
+            </EvaluateCard>
+
+            <EvaluateCard>
+              <EvaluateHeader>
+                <Image alt="Avatar" src={Avatar}/>
+                <EvaluateUser>Brandon Botosh</EvaluateUser>
+                <EvaluateDate>Há 4 meses</EvaluateDate>
+
+                <RateContainer>
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStar size={16} color={'#8381D9'} />
+                  <IoStarOutline size={16} color={'#8381D9'} />
+                </RateContainer>
+              </EvaluateHeader>
+              <EvaluateText>
+                Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. 
+                Penatibus id vestibulum imperdiet a at imperdiet lectus leo. 
+                Sit porta eget nec vitae sit vulputate eget 
+              </EvaluateText>
+            </EvaluateCard>
           </DialogContent>
         </DialogPortal>
     </DialogRoot>
