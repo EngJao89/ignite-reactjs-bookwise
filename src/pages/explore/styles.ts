@@ -82,6 +82,9 @@ export const BookTitle = styled.span`
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 22.4px */
+  &:hover {
+    color: ${(props) => props.theme['gray-400']};
+  }
 `;
 
 export const BookSubtitle = styled.span`

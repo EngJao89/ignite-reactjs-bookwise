@@ -42,6 +42,14 @@ export const DialogContent = styled(Dialog.Content)`
 
 export const DialogTitle = Dialog.Title
 
+export const DialogClose = styled(Dialog.Close)`
+  position: absolute;
+  margin-left: 538px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+`;
+
 export const BookSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -93,7 +101,7 @@ export const RateContainer = styled.div`
 
 export const BookAbout = styled.div`
   display: flex;
-  gap: 56px;
+  gap: 276px;
   padding: 24px 0;
   border-top: 1px solid;
   border-color: ${(props) => props.theme['gray-300']};
@@ -125,3 +133,87 @@ export const StatusSubtitles = styled.span`
   line-height: 140%; /* 22.4px */
   color: ${(props) => props.theme.white};
 `;
+
+export const EvaluateContent = styled.section`
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 444px;
+`;
+
+export const EvaluateButton = styled.button`
+  all: unset;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+`;
+
+
+export const EvaluateTitles = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: bold;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  color: ${(props) => props.theme['purple-100']};
+  &:hover {
+    color: ${(props) => props.theme['gray-200']};
+  }
+`;
+
+export const EvaluateCard = styled.div`
+  background: ${(props) => props.theme['gray-700']};
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 8px;
+`;
+
+export const EvaluateHeader = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+`;
+
+export const EvaluateUser = styled.span`
+  color: ${(props) => props.theme.white};
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  flex: 1 0 0;
+`;
+
+export const EvaluateDate = styled.span`
+  color: ${(props) => props.theme['gray-400']};
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  flex: 1 0 0;
+`;
+
+export const EvaluateText = styled.span`
+  color: ${(props) => props.theme['gray-300']};
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  padding-top: 8px;
+  align-self: stretch;
+`;
+
