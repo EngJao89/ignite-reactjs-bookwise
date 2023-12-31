@@ -39,6 +39,7 @@ import {
 } from "./styles"
 
 import bookImage from "../../../public/book-list/14-habitos-de-desenvolvedores-altamente-produtivos.svg"
+import { LoginModal } from "../LoginModal";
 
 interface Book {
   name: string
@@ -143,7 +144,11 @@ export function ModalBook({
             </BookSection>
 
             <EvaluateContent>
-              <EvaluateTitles>Avaliar</EvaluateTitles>
+              <LoginModal>
+                <EvaluateTitles>
+                  Avaliar
+                </EvaluateTitles>
+              </LoginModal>
               <EvaluateButton>Avaliações</EvaluateButton>
             </EvaluateContent>
 
