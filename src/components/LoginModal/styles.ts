@@ -67,3 +67,12 @@ export const CardLogin = styled.button`
   font-weight: 700;
   line-height: 160%; /* 28.8px */
 `;
+
+export const DialogClose = styled(Dialog.Close)`
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+`;
